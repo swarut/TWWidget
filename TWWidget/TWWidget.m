@@ -102,7 +102,7 @@
   CGFloat xPosition = (self.frame.size.width - self.imageView.frame.size.width)/2.0f;
   CGFloat yPosition = (self.frame.size.height - self.imageView.frame.size.height)/2.0f;
   self.imageView.frame = CGRectMake(
-    xPosition, yPosition, self.imageView.size.width, self.imageView.size.height);
+    xPosition, yPosition, self.imageView.frame.size.width, self.imageView.frame.size.height);
   self.label.hidden = YES;
 }
 
@@ -113,7 +113,7 @@
   self.imageView.hidden = YES;
   CGFloat xPosition = (self.frame.size.width - self.label.frame.size.width)/2.0f;
   CGFloat yPosition = (self.frame.size.height - self.label.frame.size.height)/2.0f;
-  self.label.frame = CGRectMake(xPosition, yPosition, self.label.size.width, self.label.size.height);
+  self.label.frame = CGRectMake(xPosition, yPosition, self.label.frame.size.width, self.label.frame.size.height);
 }
 
 @end
