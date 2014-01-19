@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => 'BSD', :file => 'LICENSE.md' }
   s.author       = { "Warut Surapat" => "s.warut@gmail.com" }
-  s.source       = { :git => "https://github.com/FingertiP/FPLinearLayout.git", :tag => "0.3" }
+  s.source       = { :git => "https://github.com/swarut/TWWidget.git", :tag => "0.1" }
   s.source_files = 'FPLinearLayout'
 
   s.requires_arc = true
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '6.0'
 end
