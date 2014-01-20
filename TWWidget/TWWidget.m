@@ -47,6 +47,7 @@
 - (UILabel*)label {
   if (!_label) {
     _label = [[UILabel alloc] initWithFrame:self.frame];
+    _label.backgroundColor = [UIColor clearColor];
     [self addSubview:_label];
   }
   return _label;
@@ -78,6 +79,11 @@
   return widget;
 }
 
++ (TWWidget*)viewWidgetWithFrame:(CGRect)frame withImage:(UIImage*)image {
+  //TWWidget* widget = [TWWidget viewWidgetWithFrame:frame];
+  return nil;
+}
+
 + (TWWidget*)buttonWidgetWithFrame:(CGRect)frame {
   TWWidget* widget = [[TWWidget alloc] initWithFrame:frame];
   widget.widgetType =TWWidgetButton;
@@ -94,6 +100,10 @@
   TWWidget* widget = [TWWidget buttonWidgetWithFrame:frame];
   widget.imageName = imageName;
   return widget;
+}
+
++ (TWWidget*)buttonWidgetWithFrame:(CGRect)frame withImage:(UIImage*)image {
+  return nil;
 }
 
 - (void)setImageName:(NSString *)imageName {

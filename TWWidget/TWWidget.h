@@ -31,8 +31,10 @@ typedef NS_ENUM(NSInteger, WidgetDisplayMode) {
 + (TWWidget*)viewWidgetWithFrame:(CGRect)frame;
 + (TWWidget*)viewWidgetWithFrame:(CGRect)frame withText:(NSString*)text;
 + (TWWidget*)viewWidgetWithFrame:(CGRect)frame withImageName:(NSString*)imageName;
++ (TWWidget*)viewWidgetWithFrame:(CGRect)frame withImage:(UIImage*)image;
 + (TWWidget*)buttonWidgetWithFrame:(CGRect)frame;
 + (TWWidget*)buttonWidgetWithFrame:(CGRect)frame withText:(NSString*)text;
 + (TWWidget*)buttonWidgetWithFrame:(CGRect)frame withImageName:(NSString*)imageName;
++ (TWWidget*)buttonWidgetWithFrame:(CGRect)frame withImage:(UIImage*)image;
 
 @end
