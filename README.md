@@ -3,6 +3,8 @@ TWWidget
 
 TWWidget, a widget library for Taskworld mobile app.
 
+TODO: Add more features.
+
 ### Usage Example
 Displaying image view with filled-circle background.
 ```objective-c
